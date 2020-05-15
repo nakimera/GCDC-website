@@ -1,0 +1,190 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.bannerImg{
+  height: 749px;
+  width: 100%;
+  background-image: url(../images/events.jpeg);
+}
+
+.navbar{
+  width: 98%;
+  height: 73px;
+  margin: 0;
+  background: #3E7EF0;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  position: fixed;
+  top:10px;
+  left: 1%;
+}
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin: 77px;
+  justify-content: space-between;
+}
+
+.about > div{
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(122, 83, 83, 0.5);
+  text-align: center;
+  padding: 24px;
+}
+
+.forum-card{
+  border: solid 1px #00C852;
+}
+
+.blogs-card{
+  margin: 0 50px;
+  border: solid 1px #FFB300;
+}
+
+.programs-card{
+  border: solid 1px #3E7EF0;
+}
+
+.card-img{
+  margin: 34px 0;
+  height: 145px;
+}
+
+.card-body{
+  text-align: justify;
+  margin-bottom: 34px;
+}
+
+.card-btn{
+  margin: 34px 0 20px 0;
+  background-color: #0F9D58;
+  color: white;
+  width: 186px;
+  height: 33px;
+  border: 0;
+}
+
+.yellow{
+  color: #FFB300;
+}
+
+.green{
+  color: #00C852;
+}
+
+.bg-yellow{
+  background-color: #FFB300;
+}
+
+.bg-green{
+  background-color: #0F9D58;
+}
+
+.hr{
+  width: 70%;
+  border: 0;
+  height: 1px;
+  margin-bottom: 10px;
+}
+
+.full-hr{
+  width: 100%;
+  border: 0;
+  height: 2px;
+  margin-top: 40px;
+}
+
+.center{
+  text-align: center;
+}
+
+.events{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 30px 220px;
+}
+
+.events-cards{
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.events-cards > div{
+  width: 165px;
+}
+
+.events-card > p{
+  text-align: justify;
+}
+
+.events-card > h4{
+  text-align: center;
+}
+
+.partners{
+  display: flex;
+  justify-content: center;
+}
+
+.partners > div{
+  width: 160px;
+  height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.partner-logo{
+  width: 120px;
+  margin-bottom: 10px;
+  height: 75px;
+}
+
+.lighter-footer{
+  background-color: #4285F4;
+  height: 200px;
+  color: white;
+  display: flex;
+  padding: 20px 190px;
+  justify-content: space-between;
+}
+
+.lighter-footer > div{
+  width: calc(100% / 4);
+}
+
+.darker-footer{
+  background-color: #0F3F88;
+  height: 68px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+
+.df-content{
+  margin: 0 55px;
+  color: white;
+  font-weight: bold;
+  width: 100%;
+  display: flex;
+}
+
+.df-content img{
+  margin-right: 15px;
+}
+
+.left{
+  flex-grow: 8;
+  display: flex;
+}
+
+.right{
+  flex-grow: 1;
+  display: flex;
+  justify-content: space-between;
+}
