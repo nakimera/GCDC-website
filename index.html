@@ -6,25 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/style.css">
   <title>HomePage</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script>
+    $(function () {
+      $('#header').load('nav.html');
+      $('#footer').load('footer.html');
+    });
+  </script>
 </head>
 
-<body> 
-  <div class="navbar">
-    <div class="title">
-      GCDC Kampala
-    </div>
-    <div class="links">
-      <div>About</div>
-      <div>Events</div>
-      <div>Programmes</div>
-      <div>Forum</div>
-      <div>Blog</div>
-    </div>
-    <div class="right">
-      <span>Help</span>
-      <span>Signup</span>
-    </div>
-  </div>
+<body>
+  <div id="header"></div>
   <div class="bannerImg"></div>
   <div class="about">
     <div class="about-card border-green">
@@ -136,41 +128,7 @@
       <p>Outbox</p>
     </div>
   </div>
-  <div class="lighter-footer">
-    <div>
-      <h2>GCDC Forum</h2>
-      <p>Popular Questions</p>
-      <p>Asked Questions</p>
-      <p>Popular Questions</p>
-    </div>
-    <div>
-      <h2>GCDC Blogs</h2>
-      <p>Success Stories</p>
-    </div>
-    <div>
-      <h2>GCDC Events</h2>
-      <p>Upcoming Events</p>
-      <p>Past Events</p>
-    </div>
-    <div>
-      <h2>GCDC Programs</h2>
-      <p>Cloud Membership Program</p>
-    </div>
-  </div>
-  <div class="darker-footer">
-    <div class="df-content">
-      <div class="left">
-        <img src="./images/copyright.svg" />
-        <div>@ Google Cloud Developers Community Kampala</div>
-      </div>
-      <div class="right">
-        <img src="./images/facebookIcon.svg" alt="facebook">
-        <img src="./images/twitterIcon.svg" alt="twitter">
-        <img src="./images/googleIcon.svg" alt="google+">
-        <img src="./images/linkedinIcon.svg" alt="linkedIn">
-      </div>
-    </div>
+  <div id="footer"></div>
   </div>
 </body>
-
 </html>
