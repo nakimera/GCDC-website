@@ -6,6 +6,7 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+/* text */
 a{
   text-decoration: none;
   color: white;
@@ -13,6 +14,10 @@ a{
 
 .center{
   text-align: center;
+}
+
+.bold{
+  font-weight: bold;
 }
 
 .justify{
@@ -27,6 +32,12 @@ a{
   color: #00C852;
 }
 
+.section-heading{
+  font-weight: bold;
+  font-size: 28px;
+}
+
+/* borders and backgrounds */
 .bg-yellow{
   background-color: #FFB300;
 }
@@ -47,50 +58,8 @@ a{
   border: solid 1px #3E7EF0;
 }
 
-.bannerImg{
-  height: 749px;
-  width: 100%;
-  background-image: url(../images/events.jpeg);
-}
-
-.navbar{
-  width: 100%;
-  background: #3E7EF0;
-  color: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.navbar div {
-  padding: 15px;
-}
-
-.about {
-  margin: 25px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.about-card{
-  width: 75%;
-  margin-bottom: 25px;
-  box-shadow: 0px 4px 4px rgba(122, 83, 83, 0.5);
-  text-align: center;
-  padding: 24px;
-}
-
-.card-img{
-  margin: 34px 0;
-  height: 145px;
-}
-
-.card-body{
-  text-align: justify;
-  margin-bottom: 34px;
-}
-
-.card-btn{
+/* buttons */
+.primary-btn{
   margin: 34px 0 20px 0;
   background-color: #0F9D58;
   color: white;
@@ -99,6 +68,7 @@ a{
   border: 0;
 }
 
+/* horizontal rules */
 .hr{
   width: 90%;
   border: 0;
@@ -113,6 +83,70 @@ a{
   margin-top: 40px;
 }
 
+/* header */
+.navbar{
+  width: 100%;
+  background: #3E7EF0;
+  color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.navbar .content{
+  margin: 0 auto;
+  width: 90%;
+  padding: 25px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  line-height: 35px;
+}
+
+.navbar .content .title{
+  width: 200px;
+  font-size: 18px;
+}
+
+.navbar .content .links{
+  width: 520px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar .content .right{
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* images */
+.banner-img{
+  height: 700px;
+  width: 100%;
+  background-image: url(../images/events.jpeg);
+}
+
+.card-img{
+  width: 150px;
+  height: 150px;
+  margin: 35px 0;
+}
+
+.rounded{
+  border-radius: 50%;
+}
+
+.big-img{
+  width: 286px;
+  height: 286px;
+  margin: 140px 0 65px 0;
+}
+
+/* card content */
+.card-body{
+  margin-bottom: 34px;
+}
+
+/* events */
 .event-card {
   display: flex;
   border-bottom: solid 1px hsl(0, 4%, 95%);
@@ -127,14 +161,6 @@ a{
 .event-card .details{
   margin: 0 0 10px 15px;
   width: 70%;
-}
-
-.card-title{
-  font-weight: 600;
-}
-
-.details > p{
-  text-align: justify;
 }
 
 .partners{
@@ -162,79 +188,63 @@ a{
 .lighter-footer{
   background-color: #4285F4;
   color: white;
-  display: flex;
-  flex-direction: column;
   padding: 25px;
 }
 
-.lighter-footer > div{
-  width: 100%;
+.lighter-footer .content{
+  margin: 0 auto;
+  width: 85%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  min-height: 200px;
+}
+
+.lighter-footer div{
+  width: 250px;
 }
 
 .darker-footer{
   background-color: #0F3F88;
+  min-height: 68px;
   display: flex;
-
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
 
 .df-content{
-  margin: 0 auto;
-  margin-top: 20px;
-  margin-bottom: 20px;
   color: white;
   font-weight: bold;
   width: 90%;
+  line-height: 30px;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
-.df-content img{
-  width: 15px;
-  height: 15px;
-  margin-right: 20px;
-}
 
 .left{
   display: flex;
-  margin-bottom: 15px;
 }
+
+.df-content .right img{
+  width: 15px;
+  height: 20px;
+  margin-right: 15px;
+}
+
+.df-content .left img{
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 6px;
+} 
 
 /* about page */
 .about-container{
   width: 85%;
   margin: 0 auto;
-  margin-top: calc(73px + 74px);
-}
-
-.rounded-image{
-  display: block;
-  margin: 0 auto;
-  border-radius: 50%;
-}
-
-.big-img{
-  width: 286px;
-  height: 286px;
-  margin-bottom: 65px;
-}
-
-.small-img{
-  width: 150px;
-  height: 150px;
-  margin: 30px auto;
-}
-
-.about-desc{
-  font-size: 18px;
-  line-height: 22px;
-  text-align: justify;
-  margin-bottom: 75px;
-}
-
-.section-heading{
-  font-weight: bold;
-  font-size: 30px;
-  text-align: center;
 }
 
 .about-cards{
@@ -242,7 +252,7 @@ a{
   flex-wrap: wrap;
   justify-content: space-between;
   width: 95%;
-  margin: 70px auto;
+  margin: 50px auto;
 
 }
 
@@ -253,6 +263,13 @@ a{
   box-shadow: 0px 4px 4px rgba(122, 83, 83, 0.5);
 }
 
+.about-desc{
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  margin-bottom: 75px;
+}
+
 .card-footer{
   line-height: 30px;
 }
@@ -261,61 +278,6 @@ a{
   .hr{
     width: 70%;
     margin-bottom: 50px;
-  }
-
-  .about {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 60px;
-    justify-content: space-between;
-  }
-  
-  .about-card{
-    width: calc(80% / 3);
-  }
-
-  .blogs-card{
-    margin: 0 50px;
-  }
-  
-  /* navigation bar */
-  .navbar{
-    width: 98%;
-    height: 73px;
-    position: fixed;
-    top:10px;
-    left: 1%;
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-  }
-
-  .navbar div {
-    margin: 0;
-  }
-
-  .navbar .title{
-    flex-grow: 3; 
-    font-weight: 600;
-    margin-left: 70px;
-  }
-  
-  .navbar .links{
-    flex-grow: 4;
-    display: flex;
-  }
-  
-  .links div{
-    width: 115px;
-  }
-  
-  .navbar .right{
-    flex-grow: 1;
-    margin-right: 25px;
-    display: flex;
   }
 
   /* events */
@@ -337,10 +299,6 @@ a{
     width: 100%;
   }
 
-  .card-title{
-    text-align: center;
-  }
-
   .partner-logo{
     width: 120px;
     margin-bottom: 10px;
@@ -357,48 +315,11 @@ a{
     width: 100%;
   }
 
-  .lighter-footer{
-    display: flex;
-    flex-direction: row;
-    padding: 20px 190px;
-    justify-content: space-between;
-    min-height: 200px;
-  }
-  
-  .lighter-footer > div{
-    width: calc(100% / 4);
-  }
-
-  .darker-footer{
-    height: 68px;
-    align-items: center;
-    font-size: 16px;
-  }
-
-  .df-content{
-    margin: 0 55px;
-    color: white;
-    font-weight: bold;
-    width: 100%;
-    flex-direction: row;
-  }
-  
-  .df-content img{
-    width: 20px;
-    height: 20px;
-    margin-right: 15px;
-  }
-  
   .left{
-    flex-grow: 8;
-    display: flex;
-    margin-bottom: 0;
+    align-items: center;
   }
-  
-  .right{
-    flex-grow: 1;
-    display: flex;
-    justify-content: space-between;
+
+  .left img{
+    margin-top: 0;
   }
-  
 }
