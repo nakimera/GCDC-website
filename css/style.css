@@ -6,8 +6,17 @@ body{
   font-family: 'Roboto', sans-serif;
 }
 
+a{
+  text-decoration: none;
+  color: white;
+}
+
 .center{
   text-align: center;
+}
+
+.justify{
+  text-align: justify;
 }
 
 .yellow{
@@ -188,6 +197,64 @@ body{
 .left{
   display: flex;
   margin-bottom: 15px;
+}
+
+/* about page */
+.about-container{
+  width: 85%;
+  margin: 0 auto;
+  margin-top: calc(73px + 74px);
+}
+
+.rounded-image{
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+}
+
+.big-img{
+  width: 286px;
+  height: 286px;
+  margin-bottom: 65px;
+}
+
+.small-img{
+  width: 150px;
+  height: 150px;
+  margin: 30px auto;
+}
+
+.about-desc{
+  font-size: 18px;
+  line-height: 22px;
+  text-align: justify;
+  margin-bottom: 75px;
+}
+
+.section-heading{
+  font-weight: bold;
+  font-size: 30px;
+  text-align: center;
+}
+
+.about-cards{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 95%;
+  margin: 70px auto;
+
+}
+
+.about-cards .card{
+  width: 280px;
+  margin-bottom: 50px;
+  padding: 24px;
+  box-shadow: 0px 4px 4px rgba(122, 83, 83, 0.5);
+}
+
+.card-footer{
+  line-height: 30px;
 }
 
 @media only screen and (min-width: 768px) {
