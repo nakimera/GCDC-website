@@ -68,6 +68,19 @@ a{
   border: 0;
 }
 
+.secondary-btn{
+  width: 122px;
+  height: 35px;
+  left: 145px;
+  top: 968px;
+  background: #3E7EF0;
+  border-radius: 5px;
+  border: 0;
+  color: white;
+  line-height: 19px;
+  font-size: 14px;
+}
+
 /* horizontal rules */
 .hr{
   width: 90%;
@@ -81,6 +94,11 @@ a{
   border: 0;
   height: 1px;
   margin-top: 40px;
+}
+
+.container{
+  width: 85%;
+  margin: 0 auto;
 }
 
 /* header */
@@ -138,7 +156,7 @@ a{
 .big-img{
   width: 286px;
   height: 286px;
-  margin: 140px 0 65px 0;
+  margin: 60px 0;
 }
 
 /* card content */
@@ -166,7 +184,6 @@ a{
 .partners{
   display: flex;
   justify-content: center;
-  width: 90%;
   margin: 0 auto;
 }
 
@@ -272,6 +289,34 @@ a{
 
 .card-footer{
   line-height: 30px;
+}
+
+.blog-card{
+  display: flex;
+  border-bottom: solid 1px hsl(0, 4%, 90%);
+  margin: 20px 0;
+  padding: 20px 0;
+  justify-content: space-between;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+
+.wrap-reverse{
+  flex-wrap: wrap-reverse;
+}
+
+.blog-card .image{
+  width: 100%;
+}
+
+.blog-card .details{
+  width: 640px;
+}
+
+.image-container{
+  width: 450px;
 }
 
 @media only screen and (min-width: 768px) {
